@@ -60,26 +60,26 @@ while(adicionarMais != "não"){
 		alert(`A lista está vazia!`);
 	} else {  //se a lista não estiver vazia
 		remover = prompt('Lista de compras:\n  Frutas: ${frutas}\n  Legumes: ${legumes}\n  Laticínios: ${laticinios}\n  Doces: ${doces}\n  Enlatados: ${enlatados}\n  Congelados: ${congelados}\n\nQual produto você deseja remover?');
-		if(frutas.indexOf(remover) != -1){
-			frutas.splice(frutas.indexOf(remover), 1);
-			alert('O item ${remover} foi removido com sucesso!')
-    } else if(legumes.indexOf(remover) != -1){
-      legumes.splice(legumes.indexOf(remover), 1);
-      alert('O item ${remover} foi removido com sucesso!')
-		} else if(laticinios.indexOf(remover) != -1){
-			laticinios.splice(laticinios.indexOf(remover), 1);
-			alert('O item ${remover} foi removido com sucesso!')
-		} else if (doces.indexOf(remover) != -1){
-			doces.splice(doces.indexOf(remover), 1);
-			alert('O item ${remover} foi removido com sucesso!')
-    } else if(enlatados.indexOf(remover) != -1){
-      enlatados.splice(enlatados.indexOf(remover), 1);
-      alert('O item ${remover} foi removido com sucesso!')
-		} else if (congelados.indexOf(remover) != -1){
-			congelados.splice(congelados.indexOf(remover), 1);
-			alert('O item ${remover} foi removido com sucesso!'')
-    } else {
-			alert('Não foi possível encontrar o item dentro da lista!');
+	if(frutas.indexOf(remover) != -1){
+	frutas.splice(frutas.indexOf(remover), 1);
+	alert('O item ${remover} foi removido com sucesso!')
+        } else if(legumes.indexOf(remover) != -1){
+        legumes.splice(legumes.indexOf(remover), 1);
+        alert('O item ${remover} foi removido com sucesso!')
+   	} else if(laticinios.indexOf(remover) != -1){
+        laticinios.splice(laticinios.indexOf(remover), 1);
+        alert('O item ${remover} foi removido com sucesso!')
+	} else if (doces.indexOf(remover) != -1){
+	doces.splice(doces.indexOf(remover), 1);
+	alert('O item ${remover} foi removido com sucesso!')
+    	} else if(enlatados.indexOf(remover) != -1){
+        enlatados.splice(enlatados.indexOf(remover), 1);
+        alert('O item ${remover} foi removido com sucesso!')
+	} else if (congelados.indexOf(remover) != -1){
+	congelados.splice(congelados.indexOf(remover), 1);
+	alert('O item ${remover} foi removido com sucesso!'')
+    	} else {
+	alert('Não foi possível encontrar o item dentro da lista!');
 		}
 	}
     }
